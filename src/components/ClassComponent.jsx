@@ -19,7 +19,7 @@ export default class ClassComponent extends Component {
             <div className="">{`onClick={() => this.setState({ number: this.state.number + 1 })}`}</div>
             <h3>{this.state.number}</h3>
             <button onClick={() => this.setState({ number: this.state.number + 1 })}>
-                Number++
+                Number+++
             </button>
         </>
     }
