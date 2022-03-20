@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 
-export default class ClassComponent extends Component {
+interface IState {
+    number?: number
+    obj?: { a: number, b: number }
+}
+export default class ClassComponent extends Component<{}, IState> {
 
-    constructor(props) {
+    constructor(props: any) {
         super(props)
 
         this.state = {
