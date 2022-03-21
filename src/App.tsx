@@ -5,6 +5,9 @@ import UseEffectComponentA from './components/UseEffectCases/ComponentA';
 import UseEffectComponentC from './components/UseEffectCases/ComponentC';
 import UseEffectComponentM from './components/UseEffectCases/ComponentM';
 import UseEffectComponentPokemon from './components/UseEffectCases/ComponentPokemon';
+import UseRefComponentA from './components/UseRefCases/ComponentA';
+import UseRefComponentB from './components/UseRefCases/ComponentB';
+import UseContextComponentA from './components/UseContext/ComponentA';
 function App() {
   return (
     <div className="App">
@@ -14,7 +17,10 @@ function App() {
         {/* <UseEffectComponentA /> */}
         {/* <UseEffectComponentC /> */}
         {/* <UseEffectComponentM /> */}
-        <UseEffectComponentPokemon />
+        {/* <UseEffectComponentPokemon /> */}
+        {/* <UseRefComponentA /> */}
+        {/* <UseRefComponentB /> */}
+        <UseContextComponentA />
       </div>
     </div>
   );

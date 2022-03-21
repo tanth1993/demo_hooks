@@ -11,7 +11,6 @@ interface IResult {
 
 export default function ComponentPokemon(props) {
     const [data, setData] = useState<IResult[]>([])
-
     const [limit, setLimit] = useState(5) //pageSize
     const [offset, setOffset] = useState(0) //paging
 
@@ -22,7 +21,6 @@ export default function ComponentPokemon(props) {
             let rsp: IData = await Repo.api_call_get(obj)
             setData(rsp.results)
         }
-
         callAPI()
     }, [limit])
 
@@ -33,10 +31,8 @@ export default function ComponentPokemon(props) {
             let rsp: IData = await Repo.api_call_get(obj)
             setData(rsp.results)
         }
-
         callAPI()
     }, [offset])
-
 
     useEffect(() => {
         const callAPI = async () => {
@@ -44,7 +40,6 @@ export default function ComponentPokemon(props) {
             let rsp: IData = await Repo.api_call_get(obj)
             setData(rsp.results)
         }
-
         callAPI()
     }, [])
 
@@ -100,6 +95,84 @@ export default function ComponentPokemon(props) {
         </div>
     )
 }
+
+
+
+
+// const isMounted = React.useRef(false) // { current: false }
+// useEffect(() => {
+//     if (!isMounted.current) return
+//     console.log('limit changed')
+//     const callAPI = async () => {
+//         const obj = serializeObj({ limit, offset })
+//         let rsp: IData = await Repo.api_call_get(obj)
+//         setData(rsp.results)
+//     }
+
+//     callAPI()
+// }, [limit])
+// useEffect(() => {
+//     if (!isMounted.current) return
+//     console.log('offset changed')
+//     const callAPI = async () => {
+//         const obj = serializeObj({ limit, offset })
+//         let rsp: IData = await Repo.api_call_get(obj)
+//         setData(rsp.results)
+//     }
+
+//     callAPI()
+// }, [offset])
+// useEffect(() => {
+//     const callAPI = async () => {
+//         const obj = serializeObj({ limit, offset })
+//         let rsp: IData = await Repo.api_call_get(obj)
+//         setData(rsp.results)
+//     }
+
+//     callAPI()
+//     isMounted.current = true
+// }, [])
+
+
+
+
+
+
+
+
+//     useEffect(() => {
+//         console.log('limit changed')
+//         const callAPI = async () => {
+//             const obj = serializeObj({ limit, offset })
+//             let rsp: IData = await Repo.api_call_get(obj)
+//             setData(rsp.results)
+//         }
+//         callAPI()
+//     }, [limit])
+
+//     useEffect(() => {
+//         console.log('offset changed')
+//         const callAPI = async () => {
+//             const obj = serializeObj({ limit, offset })
+//             let rsp: IData = await Repo.api_call_get(obj)
+//             setData(rsp.results)
+//         }
+//         callAPI()
+//     }, [offset])
+//     useEffect(() => {
+//         const callAPI = async () => {
+//             const obj = serializeObj({ limit, offset })
+//             let rsp: IData = await Repo.api_call_get(obj)
+//             setData(rsp.results)
+//         }
+//         callAPI()
+//     }, [])
+
+
+
+
+
+
 
 // useEffect(() => {
 //     console.log('limit || offset  changed')
