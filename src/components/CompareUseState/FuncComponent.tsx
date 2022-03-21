@@ -16,6 +16,15 @@ function FuncComponent() {
             </button></>
     }
 
+    // const renderExample11 = () => {
+    //     return <>
+    //         <div className="">{`onClick={() => setNumber(prevNumber => prevNumber + 1)}`}</div>
+    //         <h3>{number}</h3>
+    //         <button onClick={() => setNumber(prevNumber => prevNumber + 1)}>
+    //             Number++
+    //         </button></>
+    // }
+
 
     // const renderExample2 = () => {
     //     const upA = () => {
@@ -103,6 +112,8 @@ function FuncComponent() {
     return <div className=''>
         <h2>Functional Component</h2>
         {renderExample1()}
+        {/* {renderExample11()} */}
+
         {/* {renderExample2()} */}
         {/* {renderExample2Answer()} */}
     </div>

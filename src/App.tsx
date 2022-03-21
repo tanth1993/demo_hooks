@@ -8,19 +8,29 @@ import UseEffectComponentPokemon from './components/UseEffectCases/ComponentPoke
 import UseRefComponentA from './components/UseRefCases/ComponentA';
 import UseRefComponentB from './components/UseRefCases/ComponentB';
 import UseContextComponentA from './components/UseContext/ComponentA';
+import UseCallbackComponentA from './components/UseCallback/ComponentA';
+import UseMemoComponentA from './components/UseMemo/ComponentA';
+
 function App() {
   return (
     <div className="App">
       <div className="app-content">
         {/* <UseStateComponent /> */}
         {/* <UseStateCaseComponentA /> */}
+
         {/* <UseEffectComponentA /> */}
         {/* <UseEffectComponentC /> */}
         {/* <UseEffectComponentM /> */}
         {/* <UseEffectComponentPokemon /> */}
+
         {/* <UseRefComponentA /> */}
         {/* <UseRefComponentB /> */}
-        <UseContextComponentA />
+
+        {/* <UseContextComponentA /> */}
+
+        {/* <UseCallbackComponentA /> */}
+
+        <UseMemoComponentA />
       </div>
     </div>
   );
