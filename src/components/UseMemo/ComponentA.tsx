@@ -4,8 +4,7 @@ export default function ComponentA() {
     const [number, setNumber] = useState(9)
     const [arr, setArr] = useState<string[]>([])
 
-    const heavyDuty = (r) => {
-        console.log(r)
+    const heavyDuty = () => {
         let num = 1
         console.log("heavyDuty...");
         for (let i = 0; i < 2000000000; i++) {
@@ -14,7 +13,7 @@ export default function ComponentA() {
         return num;
     };
 
-    const calculation = React.useMemo((...r) => heavyDuty(r), []);
+    const calculation = React.useMemo(() => heavyDuty(), []);
 
     const handleAddArr = () => {
         const arrClone = [...arr]
