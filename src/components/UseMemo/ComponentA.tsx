@@ -5,7 +5,7 @@ export default function ComponentA() {
     const [arr, setArr] = useState<string[]>([])
 
     const heavyDuty = () => {
-        let num = 1
+        let num = 0
         console.log("heavyDuty...");
         for (let i = 0; i < 2000000000; i++) {
             num += 1;
@@ -13,6 +13,7 @@ export default function ComponentA() {
         return num;
     };
 
+    // const calculation = heavyDuty();
     const calculation = React.useMemo(() => heavyDuty(), []);
 
     const handleAddArr = () => {
@@ -36,7 +37,6 @@ export default function ComponentA() {
                     <button onClick={handleAddArr}>Add Arr</button>
                 </div>
             </div>
-
         </div>
     )
 }

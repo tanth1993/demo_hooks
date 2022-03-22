@@ -28,9 +28,9 @@ function App() {
 
         {/* <UseContextComponentA /> */}
 
-        {/* <UseCallbackComponentA /> */}
+        <UseCallbackComponentA />
 
-        <UseMemoComponentA />
+        {/* <UseMemoComponentA /> */}
       </div>
     </div>
   );

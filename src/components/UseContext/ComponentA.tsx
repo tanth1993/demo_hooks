@@ -1,14 +1,13 @@
 import React, { createContext } from 'react'
 import ComponentB from './ComponentB'
 
-
-
 interface IContext {
     number: number
     str: string
 }
 
 export const ComAContext = createContext<IContext>(null)
+
 export default function ComponentA() {
     const [number, setNumber] = React.useState(3)
     const [strValue, setStrValue] = React.useState("")
