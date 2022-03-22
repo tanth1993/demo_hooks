@@ -1,4 +1,6 @@
 export const pokemonUrl = 'https://pokeapi.co/api/v2/pokemon';
+export const jsonUrl = 'https://jsonplaceholder.typicode.com';
+
 export const Repo = {
     async api_call(method, body, query, urlPath) {
         let url = urlPath ? urlPath : `${pokemonUrl}${query ? '?' + query : ''}`;

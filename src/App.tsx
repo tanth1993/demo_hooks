@@ -11,6 +11,7 @@ import UseContextComponentA from './components/UseContext/ComponentA';
 import UseCallbackComponentA from './components/UseCallback/ComponentA';
 import UseMemoComponentA from './components/UseMemo/ComponentA';
 import CustomHookComponent from './components/CustomHooks';
+import ReactQueryComponent from './components/ReactQuery';
 
 function App() {
   return (
@@ -33,7 +34,9 @@ function App() {
 
         {/* <UseMemoComponentA /> */}
 
-        <CustomHookComponent />
+        {/* <CustomHookComponent /> */}
+
+        <ReactQueryComponent />
       </div>
     </div>
   );
