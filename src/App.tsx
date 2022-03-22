@@ -10,6 +10,7 @@ import UseRefComponentB from './components/UseRefCases/ComponentB';
 import UseContextComponentA from './components/UseContext/ComponentA';
 import UseCallbackComponentA from './components/UseCallback/ComponentA';
 import UseMemoComponentA from './components/UseMemo/ComponentA';
+import CustomHookComponent from './components/CustomHooks';
 
 function App() {
   return (
@@ -28,9 +29,11 @@ function App() {
 
         {/* <UseContextComponentA /> */}
 
-        <UseCallbackComponentA />
+        {/* <UseCallbackComponentA /> */}
 
         {/* <UseMemoComponentA /> */}
+
+        <CustomHookComponent />
       </div>
     </div>
   );

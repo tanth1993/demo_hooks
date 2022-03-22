@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 
-function ComponentB(props: { number: number, onChange: () => void }) {
-    const { number, onChange } = props
+function ComponentB(props: { number: number, onClick: () => void }) {
+    const { number, onClick } = props
 
     return (
         <div className='comp-wrapper'>
@@ -9,7 +9,7 @@ function ComponentB(props: { number: number, onChange: () => void }) {
             <div className='comp-div'>
                 <h4>Component B</h4>
                 <h3>{number}</h3>
-                <div className=""><button onClick={onChange}>Number++</button></div>
+                <div className=""><button onClick={onClick}>Number++</button></div>
             </div>
 
         </div>
